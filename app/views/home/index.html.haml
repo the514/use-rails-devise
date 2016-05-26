@@ -1,0 +1,10 @@
+%p welcome
+-if current_user
+  %span= current_user.email
+  %span= current_user.username
+  %span= current_user.last_sign_in_at
+  = link_to 'sign out', destroy_user_session_path, method: :delete
+  = link_to 'edit my account', edit_user_registration_path
+-else
+  = link_to 'sign in', new_user_session_path
+  = link_to 'sign up', new_user_registration_path
