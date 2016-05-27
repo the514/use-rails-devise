@@ -21,3 +21,7 @@
 
 en:
   hello: "Hello world"
+  
+  # 错误信息不显示字段名
+  # errors:
+  #   format: '%{message}'
